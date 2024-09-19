@@ -167,10 +167,14 @@ aside > h3 {
     
 }
 aside > ul {
-    list-style: '\2714\00A0\00A0';
+    list-style: '\2714\00A0\00A0'; /* Personaliza o marcador da lista */
     list-style-position: inside;
-    columns: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas por padrão */
+    gap: 10px; /* Espaço entre os itens */
+    padding: 0;
 }
+
 footer {
     background-color: #063d1e;
     color: white;
